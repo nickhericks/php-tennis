@@ -16,6 +16,7 @@ if ($match_date !='' && $match_time !='' && $number_of_courts !='' && $number_of
 	('Error connecting to MySQL server.')
 
   // Create new event
-	$create_query = "INSERT INTO events (match_date, match_time, number_of_courts, number_of_players)
+	$create_query = "
+	INSERT INTO events (match_date, match_time, number_of_courts, number_of_players)
 	VALUES ('$match_date', '$match_time', '$number_of_courts', '$number_of_players')";
 ```
