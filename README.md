@@ -12,8 +12,10 @@ This project was built as a way to learn more about PHP while also making someth
 ```php
 if ($match_date !='' && $match_time !='' && $number_of_courts !='' && $number_of_players !='') {
 	// connect to and send data to MySQL server  
-	$dbc = mysqli_connect('localhost', MY_USERNAME, MY_PASSWORD, MY_TABLE) or die ('Error connecting to MySQL server.')
+	$dbc = mysqli_connect('localhost', MY_USERNAME, MY_PASSWORD, MY_TABLE) or die
+	('Error connecting to MySQL server.')
 
   // Create new event
-  $create_query = "INSERT INTO events (match_date, match_time, number_of_courts, number_of_players) VALUES ('$match_date', '$match_time', '$number_of_courts', '$number_of_players')";
+	$create_query = "INSERT INTO events (match_date, match_time, number_of_courts, number_of_players)
+	VALUES ('$match_date', '$match_time', '$number_of_courts', '$number_of_players')";
 ```
