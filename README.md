@@ -1,5 +1,5 @@
 # Tennis Registration App
-This project was built as a way to learn more about PHP while also making something useful for my local tennis group.
+A registration web app for a local tennis group (built with PHP and MySQL).
 
 ***
 ## View project
